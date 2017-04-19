@@ -1,0 +1,24 @@
+<md-card>
+  <md-card-content>
+    <md-select placeholder="Select Course" #course id="course" (ngModelChange)="selectCourse($event)" ngModel>
+      <md-option *ngFor="let course of courses | async" [value]="course" >
+        {{ course.name }}
+      </md-option>
+    </md-select>
+    <span class="spacer"></span>
+    <md-select [disabled]="!course.selected" id="tee" placeholder="tee" (ngModelChange)="selectTee($event)" ngModel="yellow">
+      <md-option value="yellow">
+        Yellow
+      </md-option>
+      <md-option value="red">
+        Red
+      </md-option>
+      <md-option value="blue">
+        Blue
+      </md-option>
+      <md-option value="white">
+        White
+      </md-option>
+    </md-select>
+  </md-card-content>
+</md-card>

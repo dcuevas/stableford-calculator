@@ -12,13 +12,15 @@ import { ScorecardComponent } from './round/scorecard/scorecard.component';
 import { HandicapComponent } from './round/handicap/handicap.component';
 import { MaterialModule } from './material.module';
 import { PointsService } from './round/scorecard/points/points.service';
+import {CourseSelectorComponent} from "./round/course/course-selector.component";
 
 @NgModule({
   declarations: [
     AppComponent,
     RoundComponent,
     ScorecardComponent,
-    HandicapComponent
+    HandicapComponent,
+    CourseSelectorComponent
   ],
   imports: [
     BrowserModule,

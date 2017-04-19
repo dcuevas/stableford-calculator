@@ -2,31 +2,6 @@
   <span>Stableford Calculator</span>
 </md-toolbar>
 
-<md-card>
-  <md-card-content>
-
-    <md-select placeholder="Select Course" [(ngModel)]="round.course" #course id="course">
-      <md-option *ngFor="let course of courses | async" [value]="course" >
-        {{ course.name }}
-      </md-option>
-    </md-select>
-    <span class="spacer"></span>
-    <md-select [disabled]="!course.selected" id="tee" placeholder="tee" [(ngModel)]="round.tee">
-      <md-option value="yellow">
-        Yellow
-      </md-option>
-      <md-option value="red">
-        Red
-      </md-option>
-      <md-option value="blue">
-        Blue
-      </md-option>
-      <md-option value="white">
-        White
-      </md-option>
-    </md-select>
-
-  </md-card-content>
-</md-card>
-<stc-handicap [course]="round.course" (updatePlayHcpEvent)="updatePlayHandicapForPoints($event)"></stc-handicap>
+<stc-course (onCourseSelected)="updateCourse($event)" (onTeeSelected)="updateTee($event)"></stc-course>
+<stc-handicap [course]="round.course" (updatePlayHandicap)="updatePlayHandicap($event)"></stc-handicap>
 <stc-scorecard [course]="round.course" [playHandicapForPoints]="round.playHcp"></stc-scorecard>

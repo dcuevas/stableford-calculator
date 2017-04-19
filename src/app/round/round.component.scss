@@ -1,18 +1,1 @@
-md-card {
-  display:flex;
-  justify-content: flex-start;
 
-  md-card-content {
-    display: flex;
-    width: 100%;
-
-    #course {
-      width: 50%;
-    }
-
-    #tee {
-      align-self: flex-end;
-    }
-
-  }
-}

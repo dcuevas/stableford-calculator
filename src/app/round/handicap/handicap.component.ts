@@ -9,7 +9,7 @@ export class HandicapComponent {
   @Input() course: Course;
   playerHandicap: number;
   playHandicap: number = null;
-  @Output() updatePlayHcpEvent: EventEmitter<number> = new EventEmitter();
+  @Output() updatePlayHandicap: EventEmitter<number> = new EventEmitter();
   constructor() { }
 
   calculatePlayHandicap($event) {
@@ -18,8 +18,8 @@ export class HandicapComponent {
     } else {
       this.playHandicap = null;
     }
-    //console.log('emit ', this.playHandicap);
-    this.updatePlayHcpEvent.emit(this.playHandicap);
+
+    this.updatePlayHandicap.emit(this.playHandicap);
   }
 
 }

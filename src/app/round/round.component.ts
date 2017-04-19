@@ -1,31 +1,32 @@
-import {Component, OnInit, OnChanges, SimpleChanges} from '@angular/core';
-import { CoursesService } from '../courses/courses.service';
-import { Observable } from 'rxjs';
-import { Round } from "../shared/model/round";
+import { Component, OnInit } from '@angular/core';
+import { Round } from '../shared/model/round';
 
 @Component({
   selector: 'stc-round',
   templateUrl: './round.component.html',
   styleUrls: ['round.component.scss']
 })
-export class RoundComponent implements OnInit, OnChanges {
-  courses: Observable<Course[]>;
+export class RoundComponent implements OnInit {
   round: Round = new Round();
 
-  constructor(private coursesService: CoursesService) {
-    this.round.tee = 'yellow';
-  }
+  constructor() {}
 
   ngOnInit(): void {
-    this.courses = this.coursesService.getCourses();
+
   }
 
-  ngOnChanges(changes: SimpleChanges): void {
-    console.log('Changes: ', changes);
+  updatePlayHandicap(playHcp) {
+    this.round.playHcp = playHcp;
   }
 
-  updatePlayHandicapForPoints($event) {
-    this.round.playHcp = $event;
+  updateCourse(course) {
+    console.log(course);
+    this.round.course = course;
+  }
+
+  updateTee(tee) {
+    console.log(tee);
+    this.round.tee = tee;
   }
 
 }
