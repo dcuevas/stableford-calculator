@@ -1,6 +1,10 @@
-# StablefordCalc
+# Golf Stableford Calculator
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0-rc.1.
+Angular 4 application to calculate stableford points for a round of golf.
+
+This app use [Angular Material](https://material.angular.io/).
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
 
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.

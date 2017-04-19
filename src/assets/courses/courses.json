@@ -1,0 +1,489 @@
+[
+  {
+    "id": 1,
+    "name": "Guadalhorce Club de Golf",
+    "par": 72,
+    "inPar": 36,
+    "outPar": 36,
+    "in": {
+      "white": 3239,
+      "yellow": 3086,
+      "blue": 2891,
+      "red": 2637
+    },
+    "out": {
+      "white": 3013,
+      "yellow": 2874,
+      "blue": 2656,
+      "red": 2485
+    },
+    "total": {
+      "white": 6252,
+      "yellow": 5960,
+      "blue": 5547,
+      "red": 5122
+    },
+    "holes": [
+      {
+        "number": 1,
+        "hcp": 14,
+        "par": 4,
+        "distance": {
+          "white": 328,
+          "yellow": 320,
+          "blue": 282,
+          "red": 261
+        }
+      },
+      {
+        "number": 2,
+        "hcp": 17,
+        "par": 3,
+        "distance": {
+          "white": 127,
+          "yellow": 123,
+          "blue": 106,
+          "red": 105
+        }
+      },
+      {
+        "number": 3,
+        "hcp": 16,
+        "par": 4,
+        "distance": {
+          "white": 359,
+          "yellow": 333,
+          "blue": 308,
+          "red": 287
+        }
+      },
+      {
+        "number": 4,
+        "hcp": 18,
+        "par": 5,
+        "distance": {
+          "white": 444,
+          "yellow": 431,
+          "blue": 411,
+          "red": 387
+        }
+      },
+      {
+        "number": 5,
+        "hcp": 15,
+        "par": 3,
+        "distance": {
+          "white": 146,
+          "yellow": 143,
+          "blue": 132,
+          "red": 122
+        }
+      },
+      {
+        "number": 6,
+        "hcp": 10,
+        "par": 4,
+        "distance": {
+          "white": 353,
+          "yellow": 311,
+          "blue": 300,
+          "red": 296
+        }
+      },
+      {
+        "number": 7,
+        "hcp": 8,
+        "par": 5,
+        "distance": {
+          "white": 473,
+          "yellow": 469,
+          "blue": 435,
+          "red": 384
+        }
+      },
+      {
+        "number": 8,
+        "hcp": 2,
+        "par": 4,
+        "distance": {
+          "white": 414,
+          "yellow": 402,
+          "blue": 385,
+          "red": 346
+        }
+      },
+      {
+        "number": 9,
+        "hcp": 4,
+        "par": 4,
+        "distance": {
+          "white": 369,
+          "yellow": 342,
+          "blue": 297,
+          "red": 297
+        }
+      },
+      {
+        "number": 10,
+        "hcp": 5,
+        "par": 5,
+        "distance": {
+          "white": 517,
+          "yellow": 499,
+          "blue": 483,
+          "red": 421
+        }
+      },
+      {
+        "number": 11,
+        "hcp": 11,
+        "par": 3,
+        "distance": {
+          "white": 185,
+          "yellow": 171,
+          "blue": 151,
+          "red": 136
+        }
+      },
+      {
+        "number": 12,
+        "hcp": 9,
+        "par": 4,
+        "distance": {
+          "white": 374,
+          "yellow": 361,
+          "blue": 336,
+          "red": 328
+        }
+      },
+      {
+        "number": 13,
+        "hcp": 7,
+        "par": 4,
+        "distance": {
+          "white": 384,
+          "yellow": 355,
+          "blue": 327,
+          "red": 313
+        }
+      },
+      {
+        "number": 14,
+        "hcp": 13,
+        "par": 4,
+        "distance": {
+          "white": 309,
+          "yellow": 304,
+          "blue": 284,
+          "red": 249
+        }
+      },
+      {
+        "number": 15,
+        "hcp": 1,
+        "par": 4,
+        "distance": {
+          "white": 411,
+          "yellow": 391,
+          "blue": 365,
+          "red": 327
+        }
+      },
+      {
+        "number": 16,
+        "hcp": 12,
+        "par": 5,
+        "distance": {
+          "white": 475,
+          "yellow": 460,
+          "blue": 436,
+          "red": 386
+        }
+      },
+      {
+        "number": 17,
+        "hcp": 6,
+        "par": 3,
+        "distance": {
+          "white": 177,
+          "yellow": 158,
+          "blue": 143,
+          "red": 131
+        }
+      },
+      {
+        "number": 18,
+        "hcp": 3,
+        "par": 4,
+        "distance": {
+          "white": 407,
+          "yellow": 387,
+          "blue": 366,
+          "red": 346
+        }
+      }
+    ],
+    "slope": {
+      "white": 134,
+      "yellow": 135,
+      "blue": 135,
+      "red": 129
+    },
+    "value": {
+      "white": 73.6,
+      "yellow": 72,
+      "blue": 75.8,
+      "red": 73.1
+    },
+    "par": {
+      "white": 72,
+      "yellow": 72,
+      "blue": 72,
+      "red": 72
+    }
+  },
+
+  {
+    "id": 2,
+    "name": "Alcaidesa Links",
+    "par": 72,
+    "inPar": 36,
+    "outPar": 36,
+    "in": {
+      "white": 3239,
+      "yellow": 3086,
+      "blue": 2891,
+      "red": 2637
+    },
+    "out": {
+      "white": 3013,
+      "yellow": 2874,
+      "blue": 2656,
+      "red": 2485
+    },
+    "total": {
+      "white": 6252,
+      "yellow": 5960,
+      "blue": 5547,
+      "red": 5122
+    },
+    "holes": [
+      {
+        "number": 1,
+        "hcp": 14,
+        "par": 4,
+        "distance": {
+          "white": 328,
+          "yellow": 320,
+          "blue": 282,
+          "red": 261
+        }
+      },
+      {
+        "number": 2,
+        "hcp": 17,
+        "par": 3,
+        "distance": {
+          "white": 127,
+          "yellow": 123,
+          "blue": 106,
+          "red": 105
+        }
+      },
+      {
+        "number": 3,
+        "hcp": 16,
+        "par": 4,
+        "distance": {
+          "white": 359,
+          "yellow": 333,
+          "blue": 308,
+          "red": 287
+        }
+      },
+      {
+        "number": 4,
+        "hcp": 18,
+        "par": 5,
+        "distance": {
+          "white": 444,
+          "yellow": 431,
+          "blue": 411,
+          "red": 387
+        }
+      },
+      {
+        "number": 5,
+        "hcp": 15,
+        "par": 3,
+        "distance": {
+          "white": 146,
+          "yellow": 143,
+          "blue": 132,
+          "red": 122
+        }
+      },
+      {
+        "number": 6,
+        "hcp": 10,
+        "par": 4,
+        "distance": {
+          "white": 353,
+          "yellow": 311,
+          "blue": 300,
+          "red": 296
+        }
+      },
+      {
+        "number": 7,
+        "hcp": 8,
+        "par": 5,
+        "distance": {
+          "white": 473,
+          "yellow": 469,
+          "blue": 435,
+          "red": 384
+        }
+      },
+      {
+        "number": 8,
+        "hcp": 2,
+        "par": 4,
+        "distance": {
+          "white": 414,
+          "yellow": 402,
+          "blue": 385,
+          "red": 346
+        }
+      },
+      {
+        "number": 9,
+        "hcp": 4,
+        "par": 4,
+        "distance": {
+          "white": 369,
+          "yellow": 342,
+          "blue": 297,
+          "red": 297
+        }
+      },
+      {
+        "number": 10,
+        "hcp": 5,
+        "par": 5,
+        "distance": {
+          "white": 517,
+          "yellow": 499,
+          "blue": 483,
+          "red": 421
+        }
+      },
+      {
+        "number": 11,
+        "hcp": 11,
+        "par": 3,
+        "distance": {
+          "white": 185,
+          "yellow": 171,
+          "blue": 151,
+          "red": 136
+        }
+      },
+      {
+        "number": 12,
+        "hcp": 9,
+        "par": 4,
+        "distance": {
+          "white": 374,
+          "yellow": 361,
+          "blue": 336,
+          "red": 328
+        }
+      },
+      {
+        "number": 13,
+        "hcp": 7,
+        "par": 4,
+        "distance": {
+          "white": 384,
+          "yellow": 355,
+          "blue": 327,
+          "red": 313
+        }
+      },
+      {
+        "number": 14,
+        "hcp": 13,
+        "par": 4,
+        "distance": {
+          "white": 309,
+          "yellow": 304,
+          "blue": 284,
+          "red": 249
+        }
+      },
+      {
+        "number": 15,
+        "hcp": 1,
+        "par": 4,
+        "distance": {
+          "white": 411,
+          "yellow": 391,
+          "blue": 365,
+          "red": 327
+        }
+      },
+      {
+        "number": 16,
+        "hcp": 12,
+        "par": 5,
+        "distance": {
+          "white": 475,
+          "yellow": 460,
+          "blue": 436,
+          "red": 386
+        }
+      },
+      {
+        "number": 17,
+        "hcp": 6,
+        "par": 3,
+        "distance": {
+          "white": 177,
+          "yellow": 158,
+          "blue": 143,
+          "red": 131
+        }
+      },
+      {
+        "number": 18,
+        "hcp": 3,
+        "par": 4,
+        "distance": {
+          "white": 407,
+          "yellow": 387,
+          "blue": 366,
+          "red": 346
+        }
+      }
+    ],
+    "slope": {
+      "white": 134,
+      "yellow": 135,
+      "blue": 135,
+      "red": 129
+    },
+    "value": {
+      "white": 73.6,
+      "yellow": 72,
+      "blue": 75.8,
+      "red": 73.1
+    },
+    "par": {
+      "white": 72,
+      "yellow": 72,
+      "blue": 72,
+      "red": 72
+    }
+  }
+]

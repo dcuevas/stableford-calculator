@@ -1,0 +1,11 @@
+<md-card *ngIf="course">
+  <md-card-content>
+      <md-input-container>
+        <input mdInput placeholder="Your Handicap" [(ngModel)]="playerHandicap" (ngModelChange)="calculatePlayHandicap($event)">
+      </md-input-container>
+      <span class="spacer"></span>
+      <md-input-container>
+        <input mdInput placeholder="Play Handicap" disabled [value]="playHandicap">
+      </md-input-container>
+  </md-card-content>
+</md-card>

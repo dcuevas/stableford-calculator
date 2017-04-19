@@ -1,0 +1,41 @@
+md-card {
+  display:flex;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  md-card-content {
+    display: flex;
+    width: 100%;
+
+
+    md-input-container {
+      width: 2.2em;
+
+      input {
+        text-align: center;
+      }
+
+    }
+
+    table {
+      text-align: center;
+      width: 100%;
+
+      tr {
+
+        th,td {
+          padding: 5px;
+
+        }
+
+        th {
+          background: dodgerblue;
+          color: white;
+          font-weight: bold;
+        }
+
+      }
+    }
+  }
+
+}

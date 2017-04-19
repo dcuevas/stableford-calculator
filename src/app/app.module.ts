@@ -4,17 +4,30 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import 'hammerjs';
+import { CoursesService } from './courses/courses.service';
+import { RoundComponent } from './round/round.component';
+import { ScorecardComponent } from './round/scorecard/scorecard.component';
+import { HandicapComponent } from './round/handicap/handicap.component';
+import { MaterialModule } from './material.module';
+import { PointsService } from './round/scorecard/points/points.service';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    RoundComponent,
+    ScorecardComponent,
+    HandicapComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    MaterialModule,
+    BrowserAnimationsModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [ CoursesService, PointsService ],
+  bootstrap: [ AppComponent ]
 })
 export class AppModule { }

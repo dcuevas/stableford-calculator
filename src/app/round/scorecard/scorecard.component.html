@@ -1,0 +1,45 @@
+<md-card *ngIf="course">
+  <md-card-header>
+    <md-card-title>{{course.name}} Scorecard</md-card-title>
+  </md-card-header>
+
+  <md-card-content>
+    <table>
+      <thead>
+        <tr>
+          <th>Hole</th>
+          <th>Par</th>
+          <th>Meters</th>
+          <th>HCP</th>
+          <th>Score</th>
+          <th>Awarded</th>
+          <th>Net</th>
+          <th>Points</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let hole of course.holes">
+          <td class="hole">{{hole.number}}</td>
+          <td class="par">{{hole.par}}</td>
+          <td class="distance">{{hole.distance.yellow}}</td>
+          <td class="handicap">{{hole.hcp}}</td>
+          <td class="score">
+            <md-input-container dividerColor="warn">
+              <input mdInput maxlength="2" #score [id]="hole.number" type="number" required>
+            </md-input-container>
+          </td>
+          <td class="awarded">
+            {{calculatePoints(hole)}}
+          </td>
+          <td class="nett">
+            {{score.value - calculatePoints(hole)}}
+          </td>
+          <td class="points">
+            {{calculatePointsForScore(score.value, hole)}}
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </md-card-content>
+</md-card>
+
