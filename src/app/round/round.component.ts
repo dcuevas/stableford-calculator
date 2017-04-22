@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Round } from '../shared/model/round';
+import {PointsService} from "./scorecard/points/points.service";
 
 @Component({
   selector: 'stc-round',
@@ -9,10 +10,16 @@ import { Round } from '../shared/model/round';
 export class RoundComponent implements OnInit {
   round: Round = new Round();
 
-  constructor() {}
+  constructor(private pointService: PointsService) {
+
+  }
 
   ngOnInit(): void {
 
+  }
+
+  updateScore(scoreAndHole) {
+    this.round.score[Number(scoreAndHole.hole) - 1] = scoreAndHole.score;
   }
 
   updatePlayHandicap(playHcp) {
@@ -27,6 +34,12 @@ export class RoundComponent implements OnInit {
   updateTee(tee) {
     console.log(tee);
     this.round.tee = tee;
+  }
+
+  totalPoints() {
+    return this.round.score.reduce(((previousValue, currentValue, index) => {
+      return previousValue + this.pointService.getPointsForScore(currentValue, this.round.course.holes[index], this.round.playHcp);
+    }), 0);
   }
 
 }

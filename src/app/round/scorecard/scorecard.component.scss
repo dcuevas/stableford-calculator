@@ -3,6 +3,11 @@ md-card {
   justify-content: flex-start;
   flex-direction: column;
 
+  &.mat-card {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
   md-card-content {
     display: flex;
     width: 100%;
@@ -24,13 +29,21 @@ md-card {
       tr {
 
         th,td {
-          padding: 5px;
+          padding: 5px 0;
 
         }
 
         th {
           background: dodgerblue;
           color: white;
+          font-weight: bold;
+        }
+
+        .score {
+          color: blue;
+        }
+
+        .points {
           font-weight: bold;
         }
 

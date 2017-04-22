@@ -1,6 +1,8 @@
 <md-card *ngIf="course">
   <md-card-header>
-    <md-card-title>{{course.name}} Scorecard</md-card-title>
+    <md-card-title>
+      {{course.name}} Scorecard
+    </md-card-title>
   </md-card-header>
 
   <md-card-content>
@@ -9,12 +11,12 @@
         <tr>
           <th>Hole</th>
           <th>Par</th>
-          <th>Meters</th>
+          <th>Mts</th>
           <th>HCP</th>
           <th>Score</th>
-          <th>Awarded</th>
+          <th>Awrd</th>
           <th>Net</th>
-          <th>Points</th>
+          <th>Pts</th>
         </tr>
       </thead>
       <tbody>
@@ -25,14 +27,14 @@
           <td class="handicap">{{hole.hcp}}</td>
           <td class="score">
             <md-input-container dividerColor="warn">
-              <input mdInput maxlength="2" #score [id]="hole.number" type="number" required>
+              <input mdInput max="2" #score [id]="hole.number" type="number" required (ngModelChange)="updateScore($event, hole)" ngModel>
             </md-input-container>
           </td>
           <td class="awarded">
             {{calculatePoints(hole)}}
           </td>
           <td class="nett">
-            {{score.value - calculatePoints(hole)}}
+            {{calculateNettScore(score.value, hole)}}
           </td>
           <td class="points">
             {{calculatePointsForScore(score.value, hole)}}

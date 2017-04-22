@@ -1,5 +1,5 @@
-import {Component, OnInit, Input} from '@angular/core';
-import {PointsService} from "./points/points.service";
+import {Component, OnInit, Input, Output, EventEmitter, OnChanges, SimpleChanges} from '@angular/core';
+import {PointsService} from './points/points.service';
 
 @Component({
   selector: 'stc-scorecard',
@@ -9,17 +9,17 @@ import {PointsService} from "./points/points.service";
 export class ScorecardComponent implements OnInit {
   @Input() course: Course;
   @Input() playHandicapForPoints: number;
+  @Output() onScoreUpdate: EventEmitter<any> = new EventEmitter();
 
   constructor(private pointsService: PointsService) { }
 
-
-  // ngOnChanges(changes: SimpleChanges): void {
-  //   this.points = this.pointsService.getHolePoints(this.hole.hcp, this.playHandicap);
-  // }
-
   ngOnInit() {
-    console.log(this.course);
 
+  }
+
+  updateScore(score, hole: Hole) {
+    this.onScoreUpdate.emit({score: score, hole: hole.number});
+    console.log('Score: ', score, hole);
   }
 
   calculatePoints(hole: Hole) {
@@ -27,9 +27,11 @@ export class ScorecardComponent implements OnInit {
   }
 
   calculatePointsForScore(strokes: number, hole: Hole) {
-    //console.log(strokes, hole);
-    //console.log(this.pointsService.getPointsForScore(strokes, hole, this.playHandicapForPoints));
     return this.pointsService.getPointsForScore(strokes, hole, this.playHandicapForPoints);
+  }
+
+  calculateNettScore(strokes: number, hole: Hole) {
+    return this.pointsService.getNettScore(strokes, hole.par);
   }
 
 }

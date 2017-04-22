@@ -1,7 +1,8 @@
 <md-toolbar color="primary">
   <span>Stableford Calculator</span>
+  <span>Pts: {{totalPoints()}}</span>
 </md-toolbar>
 
 <stc-course (onCourseSelected)="updateCourse($event)" (onTeeSelected)="updateTee($event)"></stc-course>
 <stc-handicap [course]="round.course" (updatePlayHandicap)="updatePlayHandicap($event)"></stc-handicap>
-<stc-scorecard [course]="round.course" [playHandicapForPoints]="round.playHcp"></stc-scorecard>
+<stc-scorecard [course]="round.course" [playHandicapForPoints]="round.playHcp" (onScoreUpdate)="updateScore($event)"></stc-scorecard>
